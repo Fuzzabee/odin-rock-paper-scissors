@@ -16,7 +16,6 @@ body {
 }
 
 .header {
-    border: 1px solid black;
     display: flex;
     padding: 4em;
     text-align: center;
@@ -29,12 +28,12 @@ body {
 }
 
 .rps-body {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
 }
 
-.score {
+.score,
+.round-information {
     display: flex;
     margin: 2em auto;
     padding: 2em;
@@ -53,7 +52,8 @@ body {
 
 #rock,
 #paper,
-#scissors {
+#scissors,
+#restart-game {
     border: 1px solid #36454f;
     border-radius: 10px;
     background-color: #536878;
@@ -74,6 +74,17 @@ body {
 
 #rock:hover,
 #paper:hover,
-#scissors:hover {
+#scissors:hover,
+#restart-game:hover {
     background-color: #6e7f80;
+}
+
+.play-again {
+    display: flex;
+    justify-content: center;
+}
+
+#restart-game {
+
+    width: 150px;
 }
